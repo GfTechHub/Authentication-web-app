@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <article class="card">
+    <section class="card-header">
+      <h3 class="card-title">
+        Sign Up
+      </h3>
+      <p class="card-description">
+        Already have an account?
+        <a href="./signin.html">Sign In</a>
+      </p>
+    </section>
+    <section class="card-content">
+      <form class="sign-up-form" id="sign-up-form">
+        <label for="name">Name</label>
+        <input type="text" placeholder="John Doe" id="name" name="name">
+        <span hidden data-input="name"></span>
+        <label for="email">Email</label>
+        <input type="email" placeholder="foobar@example.com" id="email" name="email">
+        <span hidden data-input="email"></span>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+        <span hidden data-input="password"></span>
+        <label for="confirmPassword">
+          Confirm Password
+        </label>
+        <input type="password" id="confirmPassword" name="confirmPassword">
+        <span data-input="confirmPassword"></span>
+        <section hidden class="form-status-container">
+          <p class="form-status">
+          </p>
+        </section>
+        <button class="sign-up-btn" type="submit">
+          Sign Up
+        </button>
+      </form>
+    </section>
+    <section class="card-footer signup-card-footer">
+      <div class="separator">
+        <div class="separator-container">
+          <div class="separator-line">
+          </div>
+          <span class="separator-text">
+            or continue with
+          </span>
+        </div>
+      </div>
+      <div>
+        <button>
+          <img src="./assets/images (6).jpeg">
+          Facebook
+        </button>
+        <button>
+          <img src="./assets/Google__G__logo.svg.png">
+          Google
+        </button>
+      </div>
+    </section>
+  </article>
+
+  <script type="module" src="./scripts/pages/signup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/signin.css">
+  <title></title>
+</head>
+
+<body>
+  <article class="card">
+    <section class="card-header">
+      <h3 class="card-title">
+        Sign In
+      </h3>
+      <p class="card-description">
+        Don't have an account yet?
+        <a href="./signup.html">Sign Up</a>
+      </p>
+    </section>
+    <section class="card-content">
+      <form class="sign-in-form" id="sign-in-form">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="foobar@example.com">
+        <span hidden data-input="email"></span>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+        <span hidden data-input="password"></span>
+        <section hidden class="form-status-container">
+          <p class="form-status">
+          </p>
+        </section>
+        <button type="submit">
+          Sign In
+        </button>
+      </form>
+    </section>
+    <section class="card-footer signin-card-footer">
+      <div class="separator">
+        <div class="separator-container">
+          <div class="separator-line">
+          </div>
+          <span class="separator-text">
+            or continue with
+          </span>
+        </div>
+      </div>
+      <div>
+        <button>
+          <img src="./assets/images (6).jpeg" alt="Facebook Logo">
+          Facebook
+        </button>
+        <button>
+          <img src="./assets/Google__G__logo.svg.png" alt="Google Logo">
+          Google
+        </button>
+      </div>
+    </section>
+  </article>
+
+  <script type="module" src="./scripts/pages/signin.js"></script>
+</body>
+
+</html>
